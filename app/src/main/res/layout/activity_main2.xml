@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <RelativeLayout
+        android:id="@+id/input_firld"
+        android:layout_width="351dp"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="229dp" >
+
+        <RelativeLayout
+            android:layout_width="351dp"
+            android:layout_height="68dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:hint="***********@mail.com" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Password"
+                android:textColor="#A7A7A7"
+                android:textFontWeight="500" />
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="351dp"
+            android:layout_height="68dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="92dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:hint="***********@mail.com" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Email Address"
+                android:textColor="#A7A7A7" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="276dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="99dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="bottom"
+            android:text="Fill in your email and password to continue"
+            android:textColor="#A7A7A7" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="168dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Welcome Back"
+            android:textColor="#3A3A3A"
+            android:textSize="24dp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
