@@ -13,8 +13,11 @@
         android:layout_height="40dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="678dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981">
 
         <TextView
             android:id="@+id/textView19"
@@ -52,16 +55,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.919">
 
-        <TextView
-            android:id="@+id/textView13"
+        <Button
+            android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="#A7A7A7"
+            android:layout_height="45dp"
+            android:backgroundTint="#A7A7A7"
             android:fontFamily="@font/roboto_bold"
-            android:gravity="center"
-            android:text="Sign Up"
-            android:textAlignment="center"
-            android:textSize="16sp" />
+            android:text="Sing Up"
+            android:textSize="16sp"
+            app:cornerRadius="5dp" />
 
         <RelativeLayout
             android:id="@+id/sign_in"
@@ -199,6 +201,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="0dp"
+                android:fontFamily="@font/roboto_medium"
                 android:hint="Ivanov Ivan" />
 
             <TextView
@@ -227,6 +230,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="0dp"
+                android:fontFamily="@font/roboto_medium"
                 android:hint="+7(999)999-99-99" />
 
             <TextView
@@ -255,6 +259,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="0dp"
+                android:fontFamily="@font/roboto_medium"
                 android:hint="***********@mail.com" />
 
             <TextView
@@ -284,6 +289,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="0dp"
+                android:fontFamily="@font/roboto_medium"
                 android:hint="**********" />
 
             <TextView
@@ -295,6 +301,16 @@
                 android:text="Password"
                 android:textColor="#A7A7A7"
                 android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="18dp"
+                app:srcCompat="@drawable/img_1" />
 
         </RelativeLayout>
 
@@ -323,7 +339,18 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="0dp"
+                android:fontFamily="@font/roboto_medium"
                 android:hint="**********" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="18dp"
+                app:srcCompat="@drawable/img_1" />
         </RelativeLayout>
 
     </RelativeLayout>

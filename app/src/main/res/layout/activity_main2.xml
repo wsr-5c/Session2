@@ -5,7 +5,145 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#A7A7A7"
     tools:context=".MainActivity2">
+
+    <RelativeLayout
+        android:id="@+id/facebook_go"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="or sign in using"
+            android:textColor="#A7A7A7" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="16sp"
+            android:layout_height="16sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="0dp"
+            app:srcCompat="@drawable/img" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame_32"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919">
+
+        <RelativeLayout
+            android:id="@+id/sign_in"
+            android:layout_width="203dp"
+            android:layout_height="19dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="92dp"
+            android:layout_marginEnd="69.5dp"
+            android:layout_marginBottom="0dp">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Sign in"
+                android:textColor="#0560FA" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Already have an account?"
+                android:textColor="#A7A7A7" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:backgroundTint="#A7A7A7"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Log in"
+            android:textSize="16sp"
+            app:cornerRadius="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame_34"
+        android:layout_width="342dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Forgot Password?"
+            android:textAlignment="center"
+            android:textColor="#0560FA"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/img_3" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="205dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Remember password"
+            android:textColor="#A7A7A7"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/input_firld"
@@ -13,8 +151,12 @@
         android:layout_height="160dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="229dp" >
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376">
 
         <RelativeLayout
             android:layout_width="351dp"
@@ -22,12 +164,24 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="0dp">
 
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="18dp"
+                app:srcCompat="@drawable/img_1" />
+
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="0dp"
-                android:hint="***********@mail.com" />
+                android:fontFamily="@font/roboto_medium"
+                android:hint="***********@mail.com"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/textView14"
@@ -56,7 +210,9 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="0dp"
-                android:hint="***********@mail.com" />
+                android:fontFamily="@font/roboto_medium"
+                android:hint="***********@mail.com"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/textView14"
